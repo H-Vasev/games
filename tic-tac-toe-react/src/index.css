@@ -29,3 +29,44 @@ body {
   min-height: 110rem;
 }
 
+#game-container {
+  max-width: 45rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 6px;
+  background: linear-gradient(#383624, #282617);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+#game-board ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#game-board button {
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  background: #aca788;
+  color: #3f3b00;
+  font-size: 5rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
