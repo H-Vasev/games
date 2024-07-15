@@ -1,6 +1,7 @@
 import { useState } from "react";
 import GameBoard from "./components/GameBoard";
 import Player from "./components/Player";
+import Log from "./components/Log";
 
 const initialGameBoard = [
   [null, null, null],
@@ -66,13 +67,13 @@ function App() {
         <div id="game-container">
           <ol id="players" className="highlight-player">
             <Player
-              name={"player"}
+              name="player 1"
               symbol="X"
               isActive={activePlayer === "X"}
               onChangeName={handleChangeName}
             />
             <Player
-              name={"player"}
+              name={"player 2"}
               symbol="O"
               isActive={activePlayer === "O"}
               onChangeName={handleChangeName}
@@ -80,6 +81,7 @@ function App() {
           </ol>
           <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
         </div>
+        <Log turns={gameTurns}/>
       </main>
     </>
   );
